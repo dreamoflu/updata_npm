@@ -1,10 +1,12 @@
 # 上传npm包的项目示例
 
 ###1.使用vue-cli初始化一个项目
->vue init webpack vue-flag-list
->cd vue-flag-list
->cnpm install
->npm run dev
+```js
+vue init webpack project
+cd project
+cnpm install
+npm run dev
+```
 ###2. 在src下的components文件夹中新建文件夹写自己的vue模板文件我的示例模板在myComponent文件里面
 
 2.1、myComponent.vue
@@ -153,7 +155,8 @@ entry: {
   },
 ```
 5.项目目录展示
-> vue-flag-list
+```js
+ vue-flag-list
   \+ build
   \+ config
   \+ dist
@@ -163,7 +166,7 @@ entry: {
 			          index.js
 			           myComponent.vue
  >
-
+```js
 ### 6、发布npm包
 6.1、打包到本地测试
 >npm build
@@ -177,9 +180,11 @@ npm pack 之后，就会在当前目录下生成 my-personal-modal-1.0.0.tgz 的
 
 在新项目的入口文件（main.js）中引入
 
->import myComponent from 'my-personal-modal'
->import 'myComponent /dist/myComponent .min.css'
->Vue.use(myComponent )
+```js
+import myComponent from 'my-personal-modal'
+import 'myComponent /dist/myComponent .min.css'
+Vue.use(myComponent )
+```
 
 ###7、正式发布到npm
 1、在 npm官网 注册一个npm账号
