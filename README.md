@@ -166,7 +166,7 @@ entry: {
 			          index.js
 			           myComponent.vue
  >
-```js
+```
 ### 6、发布npm包
 6.1、打包到本地测试
 >npm build
